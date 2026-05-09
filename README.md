@@ -39,15 +39,10 @@ skill 包内包含保存好的 subtype/style atlas。启动和后续抽象视觉
 |---|---|
 | ![reader role and detail](example_semiDFL/reader-role-detail.png) | ![visual communication styles](example_semiDFL/visual-communication-styles.png) |
 
-| Second-Round Optimization |
-|---|
-| ![second-round optimization structure](example_semiDFL/second-round-optimization-structure.png) |
-
 - `subtype-overview.png`：inspiration/case 图型总览。
 - `visual-grammar-layout.png`：视觉语法和布局方式。
 - `reader-role-detail.png`：读者问题、论文位置和信息密度选择。
 - `visual-communication-styles.png`：主要视觉传达风格。
-- `second-round-optimization-structure.png`：第一轮方向锁定后的二轮局部优化结构。
 
 这些图是参考/概念图，不是某篇目标论文的候选图，也不能替代正式候选图生成步骤。
 
@@ -57,7 +52,7 @@ skill 包内包含保存好的 subtype/style atlas。启动和后续抽象视觉
 
 - `semidfl-chatgpt-example.mhtml`：ChatGPT 网页版执行 `inspiration-case-figure-guide` 的示例记录，也就是完整页面导出。
 - `semi_codex_v.mp4`：Codex 环境中使用该 skill 的示例片段。
-- `subtype-overview.png`、`visual-grammar-layout.png`、`reader-role-detail.png`、`visual-communication-styles.png`、`second-round-optimization-structure.png`：构建 skill 时总结出的图型、布局、读者角色、视觉风格和二轮优化参考图。
+- `subtype-overview.png`、`visual-grammar-layout.png`、`reader-role-detail.png`、`visual-communication-styles.png`：构建 skill 时总结出的图型、布局、读者角色和视觉风格参考图。
 - `R1C1.png` 到 `R1C6.png`：第一轮生成的 6 张目标论文候选图，用于比较多样化方向。`R1C*` 表示 round 1 candidate。
 - `R2C1.png` 到 `R2C4.png`：第二轮生成的目标论文候选图，用于围绕第一轮选定方向做局部优化和再选择。`R2C*` 表示 round 2 candidate。
 - `result.png`：最终选定并整理后的启发案例图。
@@ -194,15 +189,10 @@ The `example_semiDFL` directory keeps the corresponding atlas examples:
 |---|---|
 | ![reader role and detail](example_semiDFL/reader-role-detail.png) | ![visual communication styles](example_semiDFL/visual-communication-styles.png) |
 
-| Second-Round Optimization |
-|---|
-| ![second-round optimization structure](example_semiDFL/second-round-optimization-structure.png) |
-
 - `subtype-overview.png`: overview of inspiration/case figure subtypes.
 - `visual-grammar-layout.png`: visual grammar and layout patterns.
 - `reader-role-detail.png`: reader question, paper slot, and density/detail choices.
 - `visual-communication-styles.png`: major visual communication styles.
-- `second-round-optimization-structure.png`: second-round local optimization structure after the first-round direction is selected.
 
 These are reference/concept images, not candidate figures for a target paper, and they do not replace the formal candidate-generation steps.
 
@@ -212,7 +202,7 @@ The `example_semiDFL` directory preserves a complete ChatGPT web figure-making e
 
 - `semidfl-chatgpt-example.mhtml`: exported ChatGPT web execution record for `inspiration-case-figure-guide`.
 - `semi_codex_v.mp4`: a Codex usage clip for this skill.
-- `subtype-overview.png`, `visual-grammar-layout.png`, `reader-role-detail.png`, `visual-communication-styles.png`, and `second-round-optimization-structure.png`: figure-type, layout, reader-role, visual-style, and second-round optimization references summarized while building the skill.
+- `subtype-overview.png`, `visual-grammar-layout.png`, `reader-role-detail.png`, and `visual-communication-styles.png`: figure-type, layout, reader-role, and visual-style references summarized while building the skill.
 - `R1C1.png` to `R1C6.png`: 6 first-round target-paper candidate figures for comparing diverse directions. `R1C*` means round 1 candidate.
 - `R2C1.png` to `R2C4.png`: second-round target-paper candidate figures for local optimization around the selected first-round direction. `R2C*` means round 2 candidate.
 - `result.png`: final selected and organized inspiration/case figure.
