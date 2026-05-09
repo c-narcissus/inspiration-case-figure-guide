@@ -113,7 +113,7 @@ skill 包内包含保存好的 subtype/style atlas。启动和后续抽象视觉
 
 ## 推荐使用方式
 
-如果token资源优先，则优先建议在ChatGPT 网页版中使用，并选择 **Extended thinking**。启发案例图需要理解论文动机、读者预期、案例证据和视觉叙事。
+如果token额度有限，则优先建议在ChatGPT 网页版中使用，并选择 **Extended thinking**。启发案例图需要理解论文动机、读者预期、案例证据和视觉叙事。
 
 当下一步是图像生成时，在 ChatGPT 网页版中手动选择 **Create image** 模式，再让 skill 继续生成候选图、二轮变体图、正式图或修订图。ChatGPT 网页版应使用 Create image / ChatGPT Images 2.0。
 
@@ -143,8 +143,6 @@ skill 包内包含保存好的 subtype/style atlas。启动和后续抽象视觉
 ```text
 请为一个 agent 配置 inspiration-case-figure-guide-v5.0.0-skill.zip 里的 skill，然后严格按照 skill 的步骤，对目标论文绘制 inspiration/case figure。请先不要生成图片，先展示启动计划和内置 atlas；后续生成候选图时，第一轮用 R1C* 记录多样化方向，第二轮用 R2C* 记录围绕选定方向的局部优化变体。
 ```
-
-如果目标论文已经有图，可以补充说明是否要避开已有 diagram。这里的“避开已有 diagram”指的是避免把论文原图作为先验模板；它不禁止 skill 根据论文内容独立构思出相似的信息结构或视觉组织。
 
 ## 使用时的交互规则
 
@@ -270,7 +268,7 @@ The skill classifies inspiration/case figures from multiple angles instead of tr
 
 ### Recommended Use
 
-If token budget is a priority, using the ChatGPT web app with **Extended thinking** enabled is recommended. Inspiration and case figures depend on paper motivation, reader expectations, case evidence, and visual narrative.
+If token quota is limited, using the ChatGPT web app with **Extended thinking** enabled is recommended. Inspiration and case figures depend on paper motivation, reader expectations, case evidence, and visual narrative.
 
 When the next step is image generation, manually select **Create image** mode in ChatGPT web before asking the skill to continue with candidate figures, second-round variants, formal figures, or revisions. ChatGPT web should use Create image / ChatGPT Images 2.0.
 
@@ -300,8 +298,6 @@ Example prompt:
 ```text
 Please configure an agent with the skill inside inspiration-case-figure-guide-v5.0.0-skill.zip, then strictly follow the skill workflow to design an inspiration/case figure for the target paper. Do not generate images yet; first show the startup plan and built-in atlas. Later, use R1C* for first-round diverse candidates and R2C* for second-round local optimization variants around the selected direction.
 ```
-
-If the target paper already has diagrams, you can specify whether they should be ignored. This instruction is meant to prevent anchoring on the paper's original figure; it does not prohibit the skill from independently reaching a similar information structure or visual organization.
 
 ### Interaction Rules
 
